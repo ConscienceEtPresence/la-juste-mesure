@@ -1,0 +1,122 @@
+/* ============================================================
+   La juste mesure — base.css
+   Variables, typographie, réinitialisation.
+   Palette : lin, terre, olive, miel. Sobre, chaleureuse.
+   ============================================================ */
+
+:root {
+  /* Surfaces */
+  --paper: #FAF6EE;        /* lin clair */
+  --paper-2: #F2EADb;      /* parchemin un peu plus dense (cartes) */
+  --paper-3: #ECE2CE;      /* zones en relief */
+
+  /* Encre */
+  --ink: #2A2823;          /* encre brun chaud */
+  --ink-soft: #6C6555;     /* texte secondaire */
+  --ink-mute: #8C8472;     /* mentions discrètes */
+
+  /* Accents */
+  --clay: #BE6A49;         /* terre cuite */
+  --clay-deep: #9E5238;
+  --olive: #6E7A4B;        /* olive / sauge */
+  --olive-deep: #525C36;
+  --honey: #C99A3F;        /* miel / ambre */
+  --gold: #B5872F;         /* fleurons */
+
+  /* Traits */
+  --line: #E5DCC8;
+  --line-soft: #EFE7D6;
+
+  /* Élévation */
+  --shadow-sm: 0 1px 2px rgba(42, 40, 35, .05), 0 2px 8px rgba(42, 40, 35, .04);
+  --shadow-md: 0 4px 14px rgba(42, 40, 35, .08), 0 10px 30px rgba(42, 40, 35, .06);
+
+  /* Mesures */
+  --maxw: 70rem;
+  --radius: 14px;
+  --radius-lg: 22px;
+
+  /* Polices */
+  --serif-display: "Cormorant Garamond", Georgia, serif;
+  --serif-text: "Source Serif 4", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
+  --arabe: "Amiri", serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif-text);
+  font-size: 1.06rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color .4s ease, color .4s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  line-height: 1.18;
+  color: var(--ink);
+  margin: 0 0 .6em;
+  letter-spacing: .01em;
+}
+h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
+h3 { font-size: 1.3rem; }
+
+p { margin: 0 0 1.1em; }
+
+a { color: var(--clay-deep); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--clay); }
+
+em { font-style: italic; }
+strong { font-weight: 600; color: var(--ink); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+::selection { background: rgba(190, 106, 73, .18); }
+
+/* Arabe vocalisé */
+.ar, [lang="ar"] {
+  font-family: var(--arabe);
+  direction: rtl;
+  line-height: 1.9;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: clamp(1.1rem, 4vw, 2.4rem);
+}
+
+/* Fleuron */
+.fleuron {
+  color: var(--gold);
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: .4em;
+  opacity: .8;
+  user-select: none;
+}
+
+/* Entrée de page douce */
+.page-enter { animation: fadeUp .7s ease both; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}

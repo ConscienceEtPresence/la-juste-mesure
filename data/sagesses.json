@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "description": "Graines du jour — alternance de savoir (science, reformulée librement à partir des sources) et de sagesse (spiritualité, philosophie). Prose originale ; citations courtes et attribuées seulement.",
+  "graines": [
+    {
+      "id": "exces-coran",
+      "type": "sagesse",
+      "texte": "Mangez, buvez, mais ne soyez pas dans l'excès.",
+      "source": "Coran 7:31"
+    },
+    {
+      "id": "sucre-foie",
+      "type": "savoir",
+      "texte": "Le fructose en excès — celui des sodas et des sirops, pas celui d'un fruit entier — est traité par le foie un peu comme l'alcool : il fatigue, il stocke, et il ne rassasie pas.",
+      "source": "d'après Robert Lustig, Fat Chance"
+    },
+    {
+      "id": "corps-depot",
+      "type": "sagesse",
+      "texte": "Le corps n'est pas un ennemi à mater : c'est un dépôt confié. Le nourrir avec mesure, c'est honorer Celui qui l'a façonné.",
+      "source": "tradition soufie — ḥaqq al-jasad, le droit du corps"
+    },
+    {
+      "id": "trente-plantes",
+      "type": "savoir",
+      "texte": "Ce qui nourrit le mieux vos bactéries intestinales, ce n'est pas un super-aliment : c'est la variété. Viser une trentaine de plantes différentes par semaine vaut mieux que n'importe quel comptage.",
+      "source": "d'après Tim Spector, Food for Life"
+    },
+    {
+      "id": "neuf-faims",
+      "type": "sagesse",
+      "texte": "Avant de manger, demande-toi quelle faim parle : celle du ventre, ou celle des yeux, de la bouche, du cœur ? Toutes ne se nourrissent pas avec de la nourriture.",
+      "source": "d'après Jan Chozen Bays, les neuf faims"
+    },
+    {
+      "id": "calories-trompe",
+      "type": "savoir",
+      "texte": "Cent calories de sucre et cent calories d'amandes n'ont pas le même destin dans le corps : l'une réveille la faim, l'autre l'apaise. La qualité parle plus fort que le chiffre.",
+      "source": "d'après Giles Yeo, Why Calories Don't Count"
+    },
+    {
+      "id": "presence-repas",
+      "type": "sagesse",
+      "texte": "Manger lentement n'est pas une contrainte mais une libération : c'est cesser d'avaler le temps, et redevenir présent à ce qui nous tient en vie.",
+      "source": "esprit de la pleine conscience — Thich Nhat Hanh"
+    },
+    {
+      "id": "vrais-aliments",
+      "type": "savoir",
+      "texte": "Une règle simple traverse toute la science récente : mange de vrais aliments, pas trop, surtout des plantes. Le reste n'est souvent que du bruit.",
+      "source": "d'après Michael Pollan, In Defense of Food"
+    },
+    {
+      "id": "agni-feu",
+      "type": "sagesse",
+      "texte": "Bien digérer, c'est bien assimiler — la nourriture comme l'expérience. Entretiens ton feu intérieur : ni étouffé par l'excès, ni éteint par la précipitation.",
+      "source": "ayurveda — agni, le feu digestif"
+    },
+    {
+      "id": "habitude-boucle",
+      "type": "savoir",
+      "texte": "Une habitude ne s'arrache pas, elle se remplace. Garde le signal et la récompense ; change seulement le geste entre les deux.",
+      "source": "d'après Charles Duhigg, The Power of Habit"
+    },
+    {
+      "id": "sophrosyne",
+      "type": "sagesse",
+      "texte": "La tempérance n'est pas la privation : c'est l'art de la juste mesure, où le plaisir lui-même devient plus vrai parce qu'il est rendu à sa place.",
+      "source": "philosophie grecque — sophrosynê"
+    },
+    {
+      "id": "intestin-cerveau",
+      "type": "savoir",
+      "texte": "Votre ventre et votre cerveau se parlent sans cesse. Une grande part de votre sérénité se fabrique en bas, dans un intestin qu'on a nourri de fibres et de calme.",
+      "source": "d'après Emeran Mayer, The Mind-Gut Connection"
+    },
+    {
+      "id": "reprendre",
+      "type": "sagesse",
+      "texte": "Un jour glissé n'est pas un jour perdu. Reprendre plus petit demain n'est pas une défaite : c'est le chemin lui-même.",
+      "source": "La juste mesure"
+    },
+    {
+      "id": "epices-pharmacie",
+      "type": "savoir",
+      "texte": "Le curcuma, le gingembre, le thé vert, les baies : ce ne sont pas des décorations. À doses régulières, ce sont les anti-inflammatoires les plus accessibles de votre cuisine.",
+      "source": "d'après Wilfried Launay & Juliette Pouyat-Leclère"
+    }
+  ]
+}

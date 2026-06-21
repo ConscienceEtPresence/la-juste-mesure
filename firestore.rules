@@ -1,0 +1,31 @@
+rules_version = '2';
+
+// ============================================================
+// La juste mesure — règles Firestore
+// Carnet anonyme, sans authentification (comme le carnet de
+// La voie du dedans). On cadre par collection, sans données
+// nominatives. À durcir si un jour on ajoute des comptes.
+// ============================================================
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Carnet de bord : un document par identifiant anonyme,
+    // avec ses sous-collections (_meta, jours, pesees).
+    match /carnets_corps/{anonId} {
+      allow read, write: if true;
+      match /{document=**} {
+        allow read, write: if true;
+      }
+    }
+
+    // Compteurs de fréquentation anonymes (graine du jour, visites).
+    match /analytics/{document=**} {
+      allow read, write: if true;
+    }
+
+    // Tout le reste est fermé.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

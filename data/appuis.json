@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "description": "Les appuis du jour : de petits engagements concrets, groupés par thème. Chacun porte un « pourquoi » (savoir tiré des sources) et une parole pour le soir. Petit, c'est suffisant.",
+  "themes": [
+    {
+      "id": "sucre",
+      "nom": "Le sucre",
+      "appuis": [
+        { "id": "pas-sucre-ajoute", "libelle": "Pas de sucre ajouté aujourd'hui", "why": "Le sucre ajouté n'est pas une faute morale : c'est juste l'aliment qui dérègle le plus l'insuline et la faim.", "parole": "Une journée sans sucre ajouté, c'est un peu de paix rendue à l'insuline. Garde-la sans la peser." },
+        { "id": "fruit-dessert", "libelle": "Un fruit plutôt qu'un dessert sucré", "why": "Le fruit entier porte ses fibres : elles ralentissent le sucre. Le dessert raffiné, lui, frappe d'un coup.", "parole": "Le fruit entier garde ce que le sucre seul a perdu : la lenteur." },
+        { "id": "pas-boisson-sucree", "libelle": "Aucune boisson sucrée", "why": "Le fructose liquide passe au foie sans rassasier — c'est la calorie la plus silencieuse et la plus lourde.", "parole": "L'eau ne ment pas. Elle désaltère sans réveiller la faim d'après." }
+      ]
+    },
+    {
+      "id": "presence",
+      "nom": "La présence",
+      "appuis": [
+        { "id": "manger-lentement", "libelle": "Manger lentement, sans écran", "why": "La satiété met vingt minutes à parler. Manger vite, c'est ne jamais l'entendre.", "parole": "Tu as laissé le repas être un repas, et non un remplissage. C'est déjà beaucoup." },
+        { "id": "trois-respirations", "libelle": "Trois respirations avant de manger", "why": "Le nerf vague relie le souffle à la digestion : respirer pose le corps avant qu'il reçoive.", "parole": "Trois souffles avant la première bouchée : tu es revenu présent à ce qui te tient en vie." },
+        { "id": "reposer-fourchette", "libelle": "Reposer la fourchette entre les bouchées", "why": "Le geste lent rend le goût ; il laisse le ventre rattraper la bouche.", "parole": "Reposer la fourchette, c'est cesser de courir après le plat. Tu as goûté." }
+      ]
+    },
+    {
+      "id": "vegetal",
+      "nom": "Le végétal & le microbiote",
+      "appuis": [
+        { "id": "legumes-chaque-repas", "libelle": "Des légumes à chaque repas", "why": "Ce qui nourrit le microbiote, ce n'est pas un super-aliment : c'est la variété des plantes.", "parole": "Chaque plante différente est un cadeau pour le peuple invisible qui te digère." },
+        { "id": "nouvelle-plante", "libelle": "Goûter une plante nouvelle", "why": "Viser une trentaine de plantes par semaine vaut mieux que n'importe quel comptage.", "parole": "Une plante de plus dans la semaine : la diversité se construit ainsi, un goût à la fois." },
+        { "id": "aliment-fermente", "libelle": "Un aliment fermenté (yaourt, kéfir…)", "why": "Les ferments vivants apportent des bactéries utiles et les fibres qu'elles aiment.", "parole": "Un ferment vivant déposé en toi : tu as nourri ce qui te protège." }
+      ]
+    },
+    {
+      "id": "faim",
+      "nom": "La faim juste",
+      "appuis": [
+        { "id": "vraie-faim", "libelle": "Attendre la vraie faim avant de manger", "why": "Souvent ce n'est pas le ventre qui appelle, mais la fatigue, l'ennui ou le cœur.", "parole": "Tu as écouté avant d'avaler. Savoir quelle faim parle, c'est déjà se libérer." },
+        { "id": "arret-satiete", "libelle": "M'arrêter à la satiété, pas au plein", "why": "Être rassasié n'est pas être plein. Le corps demande moins qu'on ne croit.", "parole": "T'arrêter quand c'est assez, c'est rendre au corps sa juste mesure." },
+        { "id": "nommer-la-faim", "libelle": "Nommer la faim qui vient (yeux, cœur, ventre…)", "why": "Les neuf faims ne se nourrissent pas toutes avec de la nourriture.", "parole": "Nommer la faim, c'est cesser d'y répondre à l'aveugle." }
+      ]
+    },
+    {
+      "id": "mouvement",
+      "nom": "Le mouvement",
+      "appuis": [
+        { "id": "marcher-30", "libelle": "Marcher 30 minutes", "why": "Bouger améliore la sensibilité à l'insuline et apaise la tête autant que le corps.", "parole": "Trente minutes offertes au corps : il te le rend en clarté." },
+        { "id": "bouger-apres-repas", "libelle": "Bouger un peu après le repas", "why": "Une courte marche après manger adoucit le pic de glycémie.", "parole": "Quelques pas après le repas : le sucre monte moins, le corps respire." }
+      ]
+    }
+  ]
+}

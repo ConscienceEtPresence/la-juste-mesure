@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FAF6EE" />
+  <title>La juste mesure — manger en conscience</title>
+  <meta name="description" content="Un compagnon quotidien pour retrouver la juste mesure : un carnet de bord doux, la science de l'alimentation, et le sens — spirituel et philosophique — de ce que l'on mange." />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Amiri:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/base.css?v=1" />
+  <link rel="stylesheet" href="assets/css/layout.css?v=1" />
+  <link rel="stylesheet" href="assets/css/components.css?v=1" />
+  <link rel="stylesheet" href="assets/css/dark-mode.css?v=1" />
+</head>
+<body class="page-enter">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+          <path d="M16 5v22" />
+          <path d="M7 9h18" />
+          <circle cx="7" cy="9" r="0" />
+          <path d="M3.5 17a3.5 3.5 0 0 0 7 0z" />
+          <path d="M21.5 17a3.5 3.5 0 0 0 7 0z" />
+          <path d="M7 9l-3.5 8" />
+          <path d="M25 9l3.5 8" />
+          <path d="M12 27h8" />
+        </svg>
+        <span>La juste mesure</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="pages/carnet/">Le carnet</a></li>
+          <li><a href="pages/comprendre/">Comprendre</a></li>
+          <li><a href="pages/aliments/">Les aliments</a></li>
+          <li><a href="pages/sens/">Le sens</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero__ar" lang="ar" dir="rtl">القَصْد</div>
+      <h1 class="hero__title">La juste mesure</h1>
+      <p class="hero__sub">manger en conscience, s'alléger sans se juger</p>
+      <p class="hero__lede">
+        Un compagnon quotidien pour retrouver l'équilibre du corps — non par un régime sec et pressé,
+        mais en tressant trois fils : un carnet de bord doux, la science de ce que l'on mange,
+        et le sens — spirituel et philosophique — de chaque geste.
+      </p>
+      <div class="hero__actions">
+        <a href="pages/carnet/" class="btn btn--primary">Ouvrir mon carnet</a>
+        <a href="pages/comprendre/" class="btn btn--ghost">Comprendre, d'abord</a>
+      </div>
+    </section>
+
+    <!-- Les trois portes -->
+    <section class="section container">
+      <div class="portes">
+        <a href="pages/carnet/" class="porte porte--carnet">
+          <span class="porte__k">Jour après jour</span>
+          <h2 class="porte__titre">Le carnet de bord</h2>
+          <p class="porte__texte">Poser une intention le matin, recueillir l'instant, relire le soir. Suivre son poids et ses objectifs avec douceur — jamais de culpabilité.</p>
+          <span class="porte__fleche">Entrer →</span>
+        </a>
+        <a href="pages/comprendre/" class="porte porte--comprendre">
+          <span class="porte__k">La science</span>
+          <h2 class="porte__titre">Comprendre</h2>
+          <p class="porte__texte">Pourquoi le sucre, l'insuline, le microbiote, l'inflammation… Savoir ce que l'on fait, et ce qu'il y a vraiment dans un aliment.</p>
+          <span class="porte__fleche">Apprendre →</span>
+        </a>
+        <a href="pages/sens/" class="porte porte--sens">
+          <span class="porte__k">Le sens</span>
+          <h2 class="porte__titre">Spiritualité &amp; philosophie</h2>
+          <p class="porte__texte">Le corps confié, manger en présence, les neuf faims, la maîtrise du désir. Mettre du sens derrière chaque repas.</p>
+          <span class="porte__fleche">Méditer →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Graine du jour -->
+    <section class="section--tight container">
+      <div class="graine" id="graine-mount">
+        <span class="graine__label">La graine du jour</span>
+        <p class="graine__texte"><em>Un instant…</em></p>
+      </div>
+    </section>
+
+    <!-- Intention -->
+    <section class="section container">
+      <div class="intention">
+        <p class="fleuron">✦</p>
+        <span class="intention__label">L'intention</span>
+        <p>
+          Ce site ne mesure pas pour juger. Il accompagne celui qui veut s'alléger
+          en comprenant son corps, et nourrir l'âme en même temps que se nourrir.
+          La lenteur plutôt que la performance. Le sens plutôt que le régime.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="ornament">✦</div>
+      <p class="small">La juste mesure — un chemin, à votre rythme.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=1"></script>
+</body>
+</html>

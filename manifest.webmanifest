@@ -1,0 +1,12 @@
+{
+  "name": "La juste mesure",
+  "short_name": "Juste mesure",
+  "description": "Manger en conscience, s'alléger sans se juger.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAF6EE",
+  "theme_color": "#FAF6EE",
+  "lang": "fr",
+  "icons": []
+}
