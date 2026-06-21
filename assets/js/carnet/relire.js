@@ -41,6 +41,8 @@ const state = { bilans: {}, pesee: null };
     const soir = jour.soir || {};
     const appuis = matin.appuis || [];
     state.bilans = { ...(soir.bilans || {}) };
+    // Pré-remplissage : ce qui a été validé en direct dans la journée = « tenu »
+    for (const id of (jour.valides || [])) if (!(id in state.bilans)) state.bilans[id] = 'tenu';
 
     const greet = (new Date().getHours() < 18) ? 'Bonjour' : 'Bonsoir';
     const head = prenom ? `${greet} <em>${esc(prenom)}</em>,` : `${greet},`;

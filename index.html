@@ -14,7 +14,8 @@
 
   <link rel="stylesheet" href="assets/css/base.css?v=1" />
   <link rel="stylesheet" href="assets/css/layout.css?v=1" />
-  <link rel="stylesheet" href="assets/css/components.css?v=1" />
+  <link rel="stylesheet" href="assets/css/components.css?v=3" />
+  <link rel="stylesheet" href="assets/css/carnet.css?v=3" />
   <link rel="stylesheet" href="assets/css/dark-mode.css?v=1" />
 </head>
 <body class="page-enter">
@@ -52,6 +53,11 @@
   </header>
 
   <main>
+
+    <!-- Mon carnet (si présent sur cet appareil) -->
+    <section class="container" style="padding-top:1.4rem;">
+      <div id="accueil-carnet-mount" hidden></div>
+    </section>
 
     <!-- Hero -->
     <section class="hero container">
@@ -124,5 +130,6 @@
   </footer>
 
   <script src="assets/js/main.js?v=1"></script>
+  <script type="module" src="assets/js/accueil-carnet.js?v=1"></script>
 </body>
 </html>

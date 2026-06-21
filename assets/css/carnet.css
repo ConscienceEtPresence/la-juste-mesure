@@ -224,6 +224,59 @@ textarea { resize: vertical; min-height: 3.2rem; }
 .histo-jour__meta { font-family: var(--sans); font-size: .85rem; color: var(--ink-mute); margin-top: .2rem; }
 .histo-jour__appuis { font-size: .92rem; color: var(--ink-soft); margin-top: .3rem; }
 
+/* ---- Cockpit : compteurs ---- */
+.stat-row { display: flex; gap: .6rem; margin: 0 0 1.2rem; flex-wrap: wrap; }
+.stat-chip { flex: 1 1 0; min-width: 5rem; text-align: center; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: .75rem .5rem; }
+.stat-chip__val { display: block; font-family: var(--serif-display); font-size: 1.8rem; color: var(--clay-deep); line-height: 1; }
+.stat-chip__lab { display: block; font-family: var(--sans); font-size: .72rem; color: var(--ink-mute); margin-top: .25rem; }
+
+/* ---- Cockpit : anneau + objectifs validables ---- */
+.cockpit__tete { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.cockpit__sous { color: var(--ink-soft); font-size: .92rem; margin: .2rem 0 0; }
+.cockpit__pesee { color: var(--ink-soft); font-size: .92rem; margin: .9rem 0 0; }
+.cockpit__depose { font-family: var(--sans); color: var(--olive-deep); font-size: .92rem; align-self: center; }
+
+.ring { width: 68px; height: 68px; flex: 0 0 auto; }
+.ring__bg { fill: none; stroke: var(--paper-3); stroke-width: 7; }
+.ring__fg { fill: none; stroke: var(--clay); stroke-width: 7; stroke-linecap: round; transition: stroke-dashoffset .5s ease; }
+.ring__txt { font-family: var(--sans); font-size: 17px; font-weight: 600; fill: var(--ink); }
+
+.obj-liste { display: flex; flex-direction: column; gap: .5rem; }
+.obj {
+  display: flex; align-items: center; gap: .75rem; width: 100%; text-align: left; cursor: pointer;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+  padding: .7rem .9rem; font-family: var(--serif-text); font-size: 1.02rem; color: var(--ink);
+  transition: background-color .15s, border-color .15s, transform .08s;
+}
+.obj:hover { border-color: color-mix(in srgb, var(--clay) 40%, var(--line)); }
+.obj:active { transform: scale(.99); }
+.obj__check { flex: 0 0 auto; width: 27px; height: 27px; border-radius: 50%; border: 2px solid var(--line); display: grid; place-items: center; color: #fff; font-size: .95rem; transition: background-color .2s, border-color .2s; }
+.obj.is-done { background: rgba(110,122,75,.10); border-color: var(--olive); }
+.obj.is-done .obj__check { background: var(--olive); border-color: var(--olive); }
+.obj.is-done .obj__txt { color: var(--ink-soft); }
+.obj__txt { display: flex; flex-direction: column; }
+.obj__theme { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-mute); }
+
+/* ---- Cockpit : jauge de poids ---- */
+.poids-tete { display: flex; justify-content: space-between; align-items: baseline; }
+.poids-lien { font-family: var(--sans); font-size: .85rem; }
+.poids-chiffres { display: flex; justify-content: space-between; align-items: baseline; margin: .6rem 0 .45rem; }
+.poids-chiffres strong { font-family: var(--serif-display); font-size: 1.7rem; color: var(--clay-deep); }
+.poids-chiffres small { color: var(--ink-mute); font-size: .8rem; }
+.poids-obj { font-family: var(--sans); font-size: .85rem; color: var(--ink-mute); }
+.jauge { height: 10px; background: var(--paper-3); border-radius: 999px; overflow: hidden; }
+.jauge__fill { height: 100%; background: linear-gradient(90deg, var(--olive), var(--honey)); border-radius: 999px; transition: width .6s ease; }
+.poids-note { color: var(--ink-mute); font-size: .9rem; margin: .6rem 0 0; }
+
+/* ---- Panneau « mon carnet » sur l'accueil ---- */
+.accueil-carnet {
+  max-width: 42rem; margin: 0 auto 1rem; background: var(--paper-2);
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: clamp(1.4rem, 4vw, 2rem); box-shadow: var(--shadow-sm);
+}
+.accueil-carnet__hello { font-family: var(--serif-display); font-size: 1.6rem; margin: 0 0 .2rem; }
+.accueil-carnet__date { font-family: var(--sans); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 1rem; }
+
 /* États de chargement / erreur */
 .carnet-loading, .carnet-erreur { text-align: center; color: var(--ink-mute); font-style: italic; padding: 3rem 1rem; }
 .carnet-erreur { color: var(--clay-deep); }
