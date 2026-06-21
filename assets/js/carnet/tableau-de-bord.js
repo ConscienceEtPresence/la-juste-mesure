@@ -37,7 +37,11 @@ dateEl.textContent = dateLisible();
     const profil = profilSnap && profilSnap.exists() ? profilSnap.data() : {};
     const jour = jourSnap && jourSnap.exists() ? jourSnap.data() : {};
     const matin = jour.matin || {};
+    const soir = jour.soir || {};
+    const recueils = Array.isArray(jour.recueils) ? jour.recueils : [];
     const aPose = !!matin.poseLe;
+    const aDepose = !!soir.fermeLe;
+    const heure = new Date().getHours();
 
     // Index des appuis (id -> {libelle, theme})
     const appuiById = {};
@@ -100,15 +104,20 @@ dateEl.textContent = dateLisible();
       if (aPose) {
         const choisis = (matin.appuis || []).map(a => appuiById[a.id] || a).filter(Boolean);
         const items = choisis.map(a => `<li class="dash-appui"><span class="dash-appui__theme">${esc(a.themeNom || '')}</span><span>${esc(a.libelle)}</span></li>`).join('');
+        const relireBtn = aDepose ? ''
+          : (heure >= 17
+              ? `<a href="${BASE}relire/" class="btn btn--primary">Relire ma journée</a>`
+              : `<a href="${BASE}relire/" class="btn btn--ghost">Faire une halte</a>`);
         return `
           <section class="dash-bloc">
-            <p class="dash-bloc__label">Ce que j'ai posé ce matin</p>
+            <p class="dash-bloc__label">${aDepose ? "Aujourd'hui · journée déposée" : "Ce que j'ai posé ce matin"}</p>
             ${matin.pesee != null ? `<p style="color:var(--ink-soft);margin-bottom:.6rem;">Pesée du jour : <strong>${esc(matin.pesee)} kg</strong></p>` : ''}
             ${items ? `<ul class="dash-appuis">${items}</ul>` : '<p style="color:var(--ink-mute);"><em>Journée posée, sans appui particulier.</em></p>'}
+            ${aDepose ? `<p style="margin-top:.8rem;color:var(--ink-soft);"><em>Le jour est gardé. Que la nuit soit douce.</em></p>` : ''}
             <div class="dash-actions">
+              ${relireBtn}
               <a href="${BASE}poser/" class="btn btn--ghost">Modifier</a>
             </div>
-            <p class="dash-liens dash-liens--soft" style="margin-top:1rem;"><em>Ce soir, vous pourrez relire votre journée. (bientôt)</em></p>
           </section>`;
       }
       return `
@@ -121,13 +130,29 @@ dateEl.textContent = dateLisible();
         </section>`;
     }
 
+    function renderBas() {
+      if (!profil.objectif_poids) {
+        return `<p class="dash-liens dash-liens--soft"><a href="../../../index.html">Sortir du carnet</a></p>`;
+      }
+      const nbR = recueils.length;
+      return `
+        <section class="dash-bloc">
+          <p class="dash-bloc__label">En cours de journée</p>
+          <p style="color:var(--ink-soft);"><em>Une envie, un grignotage, un repas vraiment habité ? Recueillez l'instant${nbR ? ` (${nbR} aujourd'hui)` : ''} — et voyez quelle faim parlait.</em></p>
+          <div class="dash-actions"><a href="${BASE}recueillir/" class="btn btn--ghost">Recueillir un instant</a></div>
+        </section>
+        <p class="dash-liens"><a href="${BASE}miroir/">Le miroir — ma courbe de poids →</a></p>
+        <p class="dash-liens"><a href="${BASE}historique/">Mes journées passées →</a></p>
+        <p class="dash-liens dash-liens--soft"><a href="../../../index.html">Sortir du carnet</a></p>`;
+    }
+
     mount.innerHTML = `
       <section class="dash">
         <h1 class="dash__hello">${greeting}</h1>
         ${renderSeuil()}
         ${renderObjectif()}
         ${renderAujourdhui()}
-        <p class="dash-liens dash-liens--soft"><a href="../../../index.html">Sortir du carnet</a></p>
+        ${renderBas()}
       </section>`;
   } catch (e) {
     console.error(e);

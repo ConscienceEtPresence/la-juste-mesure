@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "description": "Fiches « Comprendre » : la science de l'alimentation, expliquée simplement et sourcée. Prose originale ; les faits sont reformulés librement à partir des ouvrages du dossier régime.",
+  "notions": [
+    {
+      "id": "les-vitamines",
+      "tag": "Vitamines & minéraux",
+      "titre": "Les vitamines",
+      "sous_titre": "à quoi elles servent, où les trouver, comment ne pas en manquer",
+      "intro": "Les vitamines sont de minuscules substances dont le corps a besoin en très petite quantité, mais sans lesquelles rien ne fonctionne vraiment : énergie, immunité, peau, nerfs, os, vision. Le corps ne sait presque pas les fabriquer — il faut les apporter par l'alimentation. Bonne nouvelle : pas besoin de compter. Une assiette variée, colorée, faite de vrais aliments couvre l'essentiel. On distingue deux familles : les vitamines liposolubles (A, D, E, K), stockées dans les graisses du corps, et les vitamines hydrosolubles (C et les B), qui ne se stockent pas — il faut en reprendre régulièrement.",
+      "blocs": [
+        { "titre": "Vitamine A — la vision et la peau", "texte": "Rôle : la vision (surtout la nuit), la santé de la peau et des muqueuses, l'immunité. On la trouve toute prête dans les produits animaux (foie, jaune d'œuf, beurre, produits laitiers) et sous forme de bêta-carotène — que le corps transforme en vitamine A — dans les végétaux orange et verts : carotte, patate douce, courge, abricot, épinard. Astuce : le bêta-carotène est liposoluble, un peu de matière grasse (filet d'huile d'olive) améliore son absorption. Un manque touche d'abord la vision nocturne et assèche la peau." },
+        { "titre": "Les vitamines B — l'énergie et les nerfs", "texte": "Le groupe B (B1, B2, B3, B5, B6, B8, B9, B12) transforme ce qu'on mange en énergie et entretient le système nerveux. On les trouve largement dans les céréales complètes, les légumineuses, les œufs, la viande, le poisson, les noix et les légumes verts. Deux méritent une attention particulière : la B9 (folate) — essentielle aux cellules, abondante dans les légumes à feuilles vertes, cruciale avant et pendant une grossesse — et la B12, présente presque uniquement dans les produits animaux (viande, poisson, œufs, laitages) : les personnes véganes doivent la prendre en complément, car un manque fatigue, anémie et abîme les nerfs." },
+        { "titre": "Vitamine C — l'immunité et le fer", "texte": "Rôle : antioxydante, elle soutient l'immunité, fabrique le collagène (peau, vaisseaux, gencives) et, point clé, améliore l'absorption du fer d'origine végétale — d'où l'intérêt d'un filet de citron sur les lentilles. Sources : agrumes, kiwi, poivron, persil, brocoli, fruits rouges. Elle est fragile : la chaleur et l'eau de cuisson la détruisent, mieux vaut des crudités ou une cuisson courte. Un manque sévère et prolongé donne fatigue et saignements des gencives (le scorbut, rare aujourd'hui)." },
+        { "titre": "Vitamine D — les os et l'immunité", "texte": "Rôle : elle permet de fixer le calcium (os solides) et soutient l'immunité et l'humeur. Particularité : on la fabrique surtout grâce au soleil sur la peau. En hiver, sous nos latitudes, le manque est très fréquent — l'alimentation (poissons gras : saumon, sardine, maquereau ; jaune d'œuf) ne suffit pas toujours, et une supplémentation est souvent conseillée (à voir avec un médecin)." },
+        { "titre": "Vitamine E — la protection des cellules", "texte": "Rôle : un antioxydant qui protège les membranes des cellules du vieillissement (le « stress oxydant »). Sources : huiles végétales (olive, tournesol, colza), oléagineux (amandes, noisettes), graines, avocat. Comme elle voyage avec les graisses, elle se trouve naturellement dans les aliments gras de qualité." },
+        { "titre": "Vitamine K — la coagulation et les os", "texte": "Rôle : indispensable à la coagulation du sang et utile à la solidité des os. Sources : surtout les légumes verts à feuilles (chou, épinard, brocoli, persil) et, sous une autre forme, les aliments fermentés. Une bonne raison de mettre du vert dans l'assiette." },
+        { "titre": "Et les minéraux ?", "texte": "À côté des vitamines, quelques minéraux clés : le fer (viande, légumineuses, légumes verts — mieux absorbé avec de la vitamine C), le calcium (laitages, chou, sardines, eaux riches), le magnésium (cacao, oléagineux, légumineuses, céréales complètes — anti-fatigue et anti-stress), le zinc (fruits de mer, viande, graines — immunité), l'iode (poisson, sel iodé — thyroïde) et le potassium (fruits, légumes — tension). Là encore, la variété fait le travail." },
+        { "titre": "Comment faire le plein, simplement", "texte": "Pas besoin de tableaux ni de gélules pour la plupart d'entre nous. Trois principes suffisent : la couleur (chaque couleur de fruit ou légume = une famille de vitamines et d'antioxydants différente), la variété (viser beaucoup de plantes différentes dans la semaine), et la douceur de cuisson (vapeur courte, peu d'eau, pas de friture à très haute température, qui détruit les vitamines fragiles). Les compléments isolés à forte dose ne valent pas une alimentation vraie : les vitamines agissent en synergie, entourées des fibres et des autres composés de l'aliment entier." }
+      ],
+      "source": "Synthèse d'après Willett (Eat, Drink, and Be Healthy), Pollan (In Defense of Food) et Pouyat-Leclère (Guide des aliments antioxydants)."
+    },
+    {
+      "id": "le-sucre",
+      "tag": "Le sucre",
+      "titre": "Le sucre et les glucides",
+      "sous_titre": "pourquoi tous les sucres ne se valent pas",
+      "intro": "Les glucides sont le carburant rapide du corps. Le problème n'est pas le glucide en soi, mais sa forme : un sucre raffiné ou liquide frappe d'un coup, tandis qu'un aliment complet, riche en fibres, libère son énergie lentement. Comprendre cette différence change tout.",
+      "blocs": [
+        { "titre": "Le fructose n'est pas le glucose", "texte": "Le glucose nourrit toutes nos cellules. Le fructose, lui — surtout celui des sodas, jus et sirops — est traité par le foie un peu comme l'alcool : en excès, il favorise le stockage des graisses et n'envoie pas le signal de satiété. Le fructose d'un fruit entier, lui, arrive accompagné de fibres qui en ralentissent l'absorption : ce n'est pas le même destin." },
+        { "titre": "L'insuline, l'hormone du stockage", "texte": "Quand le sucre monte vite dans le sang, le corps libère beaucoup d'insuline pour le ranger. Or l'insuline est l'hormone qui ordonne de stocker la graisse — et qui empêche de la déloger. Des pics répétés (sucreries, pain blanc, sodas) entretiennent la faim deux heures plus tard et le stockage. Apaiser l'insuline, c'est laisser le corps puiser dans ses réserves." },
+        { "titre": "Index et charge glycémiques", "texte": "L'index glycémique mesure la vitesse à laquelle un aliment élève la glycémie ; la charge glycémique tient compte de la quantité réellement mangée. Les aliments complets (avoine, légumineuses, légumes) montent doucement ; le pain blanc, le riz blanc, les sucreries montent vite. Un truc simple : préférer l'aliment le moins transformé, ajouter des fibres, des protéines ou un peu de gras au repas pour adoucir la montée." }
+      ],
+      "source": "D'après Robert Lustig (Fat Chance) et Giles Yeo (Why Calories Don't Count)."
+    },
+    {
+      "id": "le-microbiote",
+      "tag": "Microbiote",
+      "titre": "Le microbiote et l'intestin",
+      "sous_titre": "le peuple invisible qui vous digère — et vous influence",
+      "intro": "Dans votre intestin vivent des milliards de bactéries : votre microbiote. Bien nourri, il vous protège, fabrique des vitamines, calme l'inflammation et dialogue même avec votre cerveau. Mal nourri, il se déséquilibre. Le nourrir n'a rien de compliqué.",
+      "blocs": [
+        { "titre": "La diversité plutôt que le super-aliment", "texte": "Ce qui fait prospérer le microbiote, ce n'est pas un aliment miracle, c'est la variété des plantes. Un repère parlant : viser une trentaine d'espèces végétales différentes par semaine (légumes, fruits, légumineuses, céréales complètes, noix, herbes, épices). Chaque plante nourrit des bactéries différentes." },
+        { "titre": "Fibres et polyphénols, leur nourriture", "texte": "Les fibres (légumineuses, avoine, légumes) et les polyphénols (thé, cacao, baies, huile d'olive) ne sont pas digérés par nous mais fermentés par les bactéries, qui en tirent des composés anti-inflammatoires. Les aliments fermentés vivants (yaourt, kéfir, choucroute crue) apportent en plus des bactéries amies." },
+        { "titre": "L'axe intestin-cerveau", "texte": "L'intestin et le cerveau se parlent en permanence par le nerf vague et par des messagers chimiques. Une grande part de la sérotonine — liée à l'humeur — se fabrique dans l'intestin. Prendre soin de son ventre (fibres, calme, respiration lente avant le repas), c'est aussi prendre soin de son moral." }
+      ],
+      "source": "D'après Tim Spector (Food for Life) et Emeran Mayer (The Mind-Gut Connection)."
+    },
+    {
+      "id": "l-appetit",
+      "tag": "L'appétit",
+      "titre": "L'appétit et la satiété",
+      "sous_titre": "pourquoi compter les calories ne suffit pas",
+      "intro": "« Manger moins, bouger plus » paraît logique, mais le corps n'est pas une calculatrice. La faim et la satiété sont pilotées par des hormones, et la nature de l'aliment compte autant que sa quantité.",
+      "blocs": [
+        { "titre": "Une calorie n'est pas une calorie", "texte": "Cent calories de sucre et cent calories d'amandes ne font pas le même effet : l'une réveille la faim peu après, l'autre rassasie longtemps. Les protéines et les fibres calment l'appétit ; les sucres rapides l'aiguisent. La qualité parle plus fort que le chiffre." },
+        { "titre": "Leptine et ghréline", "texte": "La ghréline dit « j'ai faim », la leptine dit « j'ai assez ». L'excès de sucre et le manque de sommeil brouillent ces signaux : on mange alors sans vraie faim. Ce n'est pas un manque de volonté, c'est de la biologie — qu'on peut apaiser." },
+        { "titre": "Le corps s'adapte", "texte": "Quand on restreint trop, le corps ralentit sa dépense pour se protéger : c'est pourquoi les régimes très stricts plafonnent puis échouent. Mieux vaut un changement doux et durable — d'où l'intérêt d'avancer à son rythme, sans se punir." }
+      ],
+      "source": "D'après Giles Yeo (Why Calories Don't Count) et Robert Lustig (Fat Chance)."
+    }
+  ]
+}

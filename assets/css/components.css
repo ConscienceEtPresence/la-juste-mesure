@@ -151,6 +151,31 @@
 }
 .graine__source { font-family: var(--sans); font-size: .86rem; color: var(--ink-mute); }
 
+/* ---- Comprendre : liste de notions ---- */
+.notion-liste { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.notion-carte {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: 1.5rem 1.4rem; background: var(--paper-2);
+  border: 1px solid var(--line); border-radius: var(--radius-lg); color: var(--ink);
+  transition: transform .18s ease, box-shadow .22s ease, border-color .2s;
+}
+.notion-carte:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: color-mix(in srgb, var(--olive) 40%, var(--line)); }
+.notion-carte__tag { font-family: var(--sans); font-size: .72rem; text-transform: uppercase; letter-spacing: .16em; color: var(--olive-deep); }
+.notion-carte__titre { font-size: 1.5rem; margin: .1rem 0; }
+.notion-carte__sous { color: var(--ink-soft); font-style: italic; margin: 0; }
+.notion-carte__fleche { margin-top: .5rem; color: var(--clay); font-family: var(--sans); font-size: .9rem; }
+
+/* ---- Comprendre : fiche ---- */
+.fiche { max-width: 42rem; margin: 0 auto; padding-block: clamp(1.6rem, 4vw, 2.6rem); }
+.fiche__tag { font-family: var(--sans); font-size: .74rem; text-transform: uppercase; letter-spacing: .18em; color: var(--olive-deep); margin-bottom: .3rem; }
+.fiche__titre { margin: 0 0 .2rem; }
+.fiche__sous { font-family: var(--serif-display); font-style: italic; font-size: 1.3rem; color: var(--ink-soft); margin-bottom: 1.4rem; }
+.fiche__intro { font-size: 1.12rem; color: var(--ink-soft); border-left: 2px solid var(--olive); padding-left: 1rem; margin-bottom: 2rem; }
+.fiche-bloc { margin-bottom: 1.6rem; }
+.fiche-bloc__titre { font-size: 1.25rem; color: var(--clay-deep); margin-bottom: .3rem; }
+.fiche__source { font-family: var(--sans); font-size: .84rem; color: var(--ink-mute); font-style: italic; border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 2rem; }
+.fiche__retour { font-family: var(--sans); font-size: .92rem; margin-top: 1.4rem; }
+
 /* ---- Bouton flottant mode nuit ---- */
 .theme-toggle {
   position: fixed;

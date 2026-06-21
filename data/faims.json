@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "description": "Les neuf faims (d'après Jan Chozen Bays) et les mouvements intérieurs (déclencheurs émotionnels, dans l'esprit du travail soufi sur le nafs). Sert à nommer ce qui pousse à manger — pour distinguer la vraie faim du reste.",
+  "faims": [
+    { "id": "yeux", "nom": "La faim des yeux", "desc": "C'est beau, c'est coloré, ça appelle le regard avant le ventre." },
+    { "id": "nez", "nom": "La faim du nez", "desc": "Une odeur a réveillé l'envie, parfois sans faim réelle." },
+    { "id": "bouche", "nom": "La faim de la bouche", "desc": "Le besoin de croquant, de sucré, de saveur — la bouche qui veut sentir." },
+    { "id": "estomac", "nom": "La faim de l'estomac", "desc": "Le creux, le ventre qui parle : c'est souvent la vraie faim physique." },
+    { "id": "cellulaire", "nom": "La faim cellulaire", "desc": "Le corps qui réclame vraiment de l'énergie, de l'eau, un nutriment." },
+    { "id": "mental", "nom": "La faim du mental", "desc": "« Je devrais », « il est l'heure », une règle dans la tête plus qu'un besoin." },
+    { "id": "coeur", "nom": "La faim du cœur", "desc": "Le besoin de réconfort, de douceur, de combler un manque affectif." },
+    { "id": "toucher", "nom": "La faim du toucher", "desc": "La texture, la chaleur, le geste de porter à la bouche qui apaise." },
+    { "id": "oreille", "nom": "La faim de l'oreille", "desc": "Le bruit du croustillant, le rituel sonore qui attire." }
+  ],
+  "mouvements": [
+    { "id": "fatigue", "nom": "La fatigue", "desc": "Épuisé, on cherche un coup d'énergie rapide plutôt que du repos." },
+    { "id": "ennui", "nom": "L'ennui", "desc": "Le vide d'un moment sans relief — manger pour s'occuper." },
+    { "id": "stress", "nom": "Le stress / le contrôle", "desc": "Tendu, débordé — manger pour reprendre une prise sur quelque chose." },
+    { "id": "tristesse", "nom": "La tristesse", "desc": "Une peine, un creux du cœur que la nourriture vient adoucir un instant." },
+    { "id": "solitude", "nom": "La solitude", "desc": "Seul, on remplit la présence absente par le repas." },
+    { "id": "recompense", "nom": "La récompense", "desc": "« Je l'ai bien mérité » — se faire du bien après l'effort." },
+    { "id": "habitude", "nom": "L'habitude", "desc": "Le geste automatique, le même lieu, la même heure, sans y penser." },
+    { "id": "joie", "nom": "La fête / le partage", "desc": "Un moment heureux, convivial — manger fait partie de la joie partagée." }
+  ]
+}
