@@ -91,6 +91,11 @@ const state = { appuis: new Set() };
         <p class="poser-section-titre">Mes appuis du jour</p>
         <p class="poser-section-hint">Touchez un ou plusieurs appuis. Chacun porte son « pourquoi ».</p>
         ${themesHTML}
+        <div class="appui-theme">
+          <h3 class="appui-theme__nom">Mon propre appui</h3>
+          <p class="poser-section-hint" style="margin-top:-.3rem;">Écrivez le vôtre, en quelques mots — il sera suivi comme les autres, ce soir.</p>
+          <div class="champ"><input type="text" id="appui-perso" maxlength="90" placeholder="ex. demain matin, juste un café" value="${esc((matin.appuis||[]).find(a=>a.theme==='perso')?.libelle || '')}" /></div>
+        </div>
         <div class="poser-commit">
           <button type="button" class="btn btn--primary" id="commit">${premierPas ? 'Commencer mon carnet' : 'Poser ma journée'}</button>
           <span class="poser-ok" id="ok" hidden>✓ posé</span>
@@ -118,6 +123,8 @@ const state = { appuis: new Set() };
       btn.disabled = true; btn.textContent = 'Un instant…';
       try {
         const appuis = [...mount.querySelectorAll('.appui-carte.is-selected')].map(b => ({ id: b.dataset.id, theme: b.dataset.theme, libelle: b.dataset.libelle }));
+        const persoTxt = ((document.getElementById('appui-perso') || {}).value || '').trim();
+        if (persoTxt) appuis.push({ id: 'perso-' + Date.now(), theme: 'perso', themeNom: 'Mon appui', libelle: persoTxt });
         let pesee = null;
 
         if (premierPas) {

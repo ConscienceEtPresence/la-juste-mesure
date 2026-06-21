@@ -44,7 +44,11 @@ const dateCourte = k => { const [y,m,d] = k.split('-'); return new Date(+y, +m-1
       const d = s.data() || {};
       if (d.matin && d.matin.poseLe) {
         nbJours++;
-        for (const a of (d.matin.appuis||[])) appuiCount[a.id] = (appuiCount[a.id]||0)+1;
+        for (const a of (d.matin.appuis||[])) {
+          const key = a.theme === 'perso' ? ('perso:' + (a.libelle||'').toLowerCase()) : a.id;
+          appuiCount[key] = (appuiCount[key]||0)+1;
+          if (!appuiNom[key]) appuiNom[key] = a.libelle || appuiNom[a.id] || a.id;
+        }
       }
       for (const r of (d.recueils||[])) {
         for (const f of (r.faims||[])) declCount[f] = (declCount[f]||0)+1;

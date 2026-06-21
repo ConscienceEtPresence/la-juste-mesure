@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "description": "Dictionnaire des aliments : pour chacun, ce qu'il contient (vitamines, minéraux), ses repères (sucre, fibres, charge glycémique, microbiote, inflammation), ses bienfaits, son énergie ayurvédique et une note de présence. Prose originale, faits reformulés des sources.",
+  "aliments": [
+    {
+      "id": "brocoli", "nom": "Brocoli", "tag": "Légume", "resume": "Un crucifère antioxydant, riche en vitamines C et K, doux pour la ligne.",
+      "vitamines": ["Vitamine C", "Vitamine K", "Vitamine B9 (folate)"], "mineraux": ["Potassium"],
+      "reperes": [{"k":"Sucre","v":"faible"},{"k":"Fibres","v":"élevées"},{"k":"Charge glycémique","v":"basse"},{"k":"Microbiote","v":"nourrit (fibres)"},{"k":"Inflammation","v":"apaise"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Le brocoli appartient aux crucifères, ces légumes qui contiennent du sulforaphane, un composé qui soutient les défenses antioxydantes du corps. Riche en fibres et très peu calorique, il rassasie sans peser, et sa vitamine C participe à l'immunité et à l'absorption du fer."},
+        {"titre":"En cuisine","texte":"La vitamine C est fragile : préférez une cuisson vapeur courte (5 à 7 min) plutôt qu'une longue ébullition qui la dilue dans l'eau. Croquant, il garde le meilleur."}
+      ],
+      "note": "Un légume humble : il ne demande rien, et donne beaucoup. La juste mesure aime ces présences discrètes."
+    },
+    {
+      "id": "epinard", "nom": "Épinard", "tag": "Légume vert", "resume": "Feuille verte chargée de vitamine K, de folate et de fer végétal.",
+      "vitamines": ["Vitamine K", "Vitamine A (bêta-carotène)", "Vitamine B9 (folate)", "Vitamine C"], "mineraux": ["Fer", "Magnésium"],
+      "reperes": [{"k":"Sucre","v":"très faible"},{"k":"Fibres","v":"bonnes"},{"k":"Charge glycémique","v":"très basse"},{"k":"Inflammation","v":"apaise"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"L'épinard concentre la vitamine K (coagulation, os), le folate (cellules, précieux en grossesse) et un fer d'origine végétale. Astuce : un filet de citron — donc de vitamine C — sur les épinards améliore nettement l'absorption de ce fer."},
+        {"titre":"Bon à savoir","texte":"Il contient des oxalates qui peuvent gêner l'absorption du calcium ; ce n'est un sujet que si on en mange d'énormes quantités crues, au quotidien."}
+      ],
+      "note": "Le vert profond de la feuille dit la vie. Mettre du vert dans l'assiette, c'est déjà un soin."
+    },
+    {
+      "id": "myrtille", "nom": "Myrtille", "tag": "Fruit", "resume": "Petite baie parmi les plus antioxydantes, sucrée mais douce pour la glycémie.",
+      "vitamines": ["Vitamine C", "Vitamine K"], "mineraux": ["Manganèse"],
+      "reperes": [{"k":"Sucre","v":"modéré"},{"k":"Fibres","v":"bonnes"},{"k":"Charge glycémique","v":"basse"},{"k":"Microbiote","v":"nourrit (polyphénols)"},{"k":"Antioxydant","v":"très élevé"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Sa couleur bleu-violet vient des anthocyanes, des polyphénols puissamment antioxydants qui nourrissent aussi le microbiote. Malgré son goût sucré, ses fibres et ses polyphénols font monter la glycémie doucement."},
+        {"titre":"En pratique","texte":"Fraîche ou surgelée, peu importe : la congélation préserve les antioxydants. Une poignée dans un yaourt nature, et le dessert devient un soin."}
+      ],
+      "note": "Le sucré n'est pas l'ennemi quand il vient entier, avec ses fibres et sa couleur. C'est le sucre nu, isolé, qui dérègle."
+    },
+    {
+      "id": "saumon", "nom": "Saumon", "tag": "Poisson gras", "resume": "Source rare de vitamine D et d'oméga-3 anti-inflammatoires.",
+      "vitamines": ["Vitamine D", "Vitamine B12", "Vitamine B3"], "mineraux": ["Sélénium", "Iode"],
+      "reperes": [{"k":"Sucre","v":"nul"},{"k":"Protéines","v":"élevées"},{"k":"Inflammation","v":"apaise (oméga-3)"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Le saumon est l'une des rares sources alimentaires de vitamine D (souvent manquante en hiver) et il est riche en oméga-3 (EPA/DHA), ces bonnes graisses qui calment l'inflammation et soutiennent le cerveau et le cœur. Ses protéines rassasient durablement."},
+        {"titre":"En cuisine","texte":"Une cuisson douce (vapeur, four à basse température, mi-cuit) préserve les oméga-3, fragiles à très forte chaleur. Les petits poissons gras (sardine, maquereau) offrent les mêmes bienfaits, à moindre coût."}
+      ],
+      "note": "Honorer le corps, c'est aussi lui offrir ce qui le répare en profondeur, pas seulement ce qui le remplit."
+    },
+    {
+      "id": "lentilles", "nom": "Lentilles", "tag": "Légumineuse", "resume": "Protéines végétales, fibres et fer — l'amie du microbiote et de la satiété.",
+      "vitamines": ["Vitamine B9 (folate)", "Vitamine B1"], "mineraux": ["Fer", "Magnésium", "Potassium"],
+      "reperes": [{"k":"Sucre","v":"faible"},{"k":"Fibres","v":"très élevées"},{"k":"Charge glycémique","v":"basse"},{"k":"Microbiote","v":"nourrit beaucoup"},{"k":"Protéines","v":"bonnes"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Les lentilles allient protéines végétales, fibres abondantes et fer. Elles libèrent leur énergie lentement (charge glycémique basse) : on est rassasié longtemps, sans pic de sucre. Leurs fibres sont un festin pour les bonnes bactéries de l'intestin."},
+        {"titre":"En pratique","texte":"Un filet de citron améliore l'absorption du fer. Bien cuites et, si besoin, trempées, elles se digèrent mieux. Un repas de lentilles remplace avantageusement une viande."}
+      ],
+      "note": "Peu coûteuse, nourrissante, patiente à cuire : la lentille a quelque chose d'une sagesse paysanne."
+    },
+    {
+      "id": "amandes", "nom": "Amandes", "tag": "Oléagineux", "resume": "Bon gras, vitamine E et magnésium — la collation qui rassasie vraiment.",
+      "vitamines": ["Vitamine E", "Vitamine B2"], "mineraux": ["Magnésium", "Calcium"],
+      "reperes": [{"k":"Sucre","v":"faible"},{"k":"Fibres","v":"bonnes"},{"k":"Bon gras","v":"élevé"},{"k":"Satiété","v":"forte"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Riches en vitamine E (antioxydant) et en magnésium (anti-fatigue, anti-stress), les amandes apportent de bonnes graisses et des fibres qui calment la faim. À calories égales, une poignée d'amandes rassasie bien mieux qu'une sucrerie."},
+        {"titre":"En pratique","texte":"Une petite poignée (une vingtaine) en collation suffit. Nature et non salées de préférence. Idéales pour traverser le creux de l'après-midi sans céder au sucre."}
+      ],
+      "note": "Cent calories d'amandes ne valent pas cent calories de bonbon : l'une apaise la faim, l'autre l'attise. La qualité parle plus fort que le chiffre."
+    },
+    {
+      "id": "curcuma", "nom": "Curcuma", "tag": "Épice", "resume": "L'anti-inflammatoire le plus accessible de la cuisine.",
+      "vitamines": [], "mineraux": ["Fer", "Manganèse"],
+      "reperes": [{"k":"Inflammation","v":"apaise fortement"},{"k":"Antioxydant","v":"élevé"},{"k":"Sucre","v":"nul"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Le curcuma contient de la curcumine, un composé étudié pour son action anti-inflammatoire (il calme des signaux d'inflammation comme NF-κB). À doses régulières — pas seulement une pincée rare — c'est un allié quotidien des articulations et du terrain général."},
+        {"titre":"En pratique","texte":"La curcumine s'absorbe mal seule : associez-la à du poivre noir (la pipérine multiplie son absorption) et à un peu de matière grasse. Dans une soupe, un curry, un lait doré."}
+      ],
+      "note": "Les épices ne sont pas des décorations : ce sont les remèdes discrets de la cuisine de tous les jours."
+    },
+    {
+      "id": "avoine", "nom": "Avoine (flocons)", "tag": "Céréale complète", "resume": "Le petit-déjeuner qui tient au corps — fibres douces et énergie lente.",
+      "vitamines": ["Vitamine B1"], "mineraux": ["Magnésium", "Fer", "Zinc"],
+      "reperes": [{"k":"Sucre","v":"faible"},{"k":"Fibres","v":"élevées (bêta-glucane)"},{"k":"Charge glycémique","v":"modérée"},{"k":"Microbiote","v":"nourrit"},{"k":"Satiété","v":"forte"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"L'avoine contient le bêta-glucane, une fibre soluble qui ralentit l'absorption du sucre, nourrit le microbiote et aide à réguler le cholestérol. Au petit-déjeuner, elle évite le coup de pompe et la faim de 11 h."},
+        {"titre":"En pratique","texte":"Flocons complets plutôt que céréales sucrées du commerce. Trempés la veille (overnight oats) ou en porridge, avec des fruits et quelques amandes : un départ de journée stable."}
+      ],
+      "note": "Bien commencer la journée, c'est déjà la poser. Un appui dès le matin vaut mieux qu'un rattrapage le soir."
+    },
+    {
+      "id": "oeuf", "nom": "Œuf", "tag": "Protéine", "resume": "Petit, complet, rassasiant — protéines et vitamines en un.",
+      "vitamines": ["Vitamine B12", "Vitamine D", "Vitamine A", "Choline (B)"], "mineraux": ["Sélénium", "Iode"],
+      "reperes": [{"k":"Sucre","v":"nul"},{"k":"Protéines","v":"complètes"},{"k":"Satiété","v":"forte"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"L'œuf offre des protéines complètes (tous les acides aminés essentiels), de la vitamine B12 et D, et de la choline, utile au cerveau. Au petit-déjeuner, il coupe nettement les fringales de la matinée."},
+        {"titre":"En pratique","texte":"Longtemps accusé pour son cholestérol, il est aujourd'hui réhabilité pour la plupart des gens. Coque, poché ou mollet préservent mieux ses qualités qu'une cuisson dure et longue."}
+      ],
+      "note": "La satiété vraie protège des grignotages. Bien nourrir le matin, c'est s'épargner bien des luttes l'après-midi."
+    },
+    {
+      "id": "yaourt-nature", "nom": "Yaourt nature / Kéfir", "tag": "Fermenté", "resume": "Des bactéries vivantes pour l'intestin — à condition qu'il soit nature.",
+      "vitamines": ["Vitamine B12", "Vitamine B2"], "mineraux": ["Calcium"],
+      "reperes": [{"k":"Sucre","v":"faible (si nature)"},{"k":"Microbiote","v":"apporte des ferments vivants"},{"k":"Protéines","v":"bonnes"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Les yaourts et le kéfir vrais contiennent des bactéries vivantes qui renforcent le microbiote. Ils apportent calcium, protéines et vitamine B12. Le kéfir est encore plus riche en souches que le yaourt."},
+        {"titre":"Attention","texte":"Les yaourts aromatisés et sucrés du commerce annulent une partie du bénéfice : beaucoup de sucre ajouté. Choisissez nature, et sucrez vous-même avec un fruit écrasé ou une myrtille."}
+      ],
+      "note": "Nourrir le peuple invisible qui vous digère, c'est prendre soin de son humeur autant que de son ventre."
+    },
+    {
+      "id": "pomme", "nom": "Pomme", "tag": "Fruit", "resume": "Le fruit simple et fibreux — sa pectine adoucit le sucre.",
+      "vitamines": ["Vitamine C"], "mineraux": ["Potassium"],
+      "reperes": [{"k":"Sucre","v":"modéré"},{"k":"Fibres","v":"bonnes (pectine)"},{"k":"Charge glycémique","v":"basse à modérée"},{"k":"Microbiote","v":"nourrit"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"La pomme contient de la pectine, une fibre soluble qui ralentit le sucre et nourrit le microbiote, ainsi que des polyphénols dans sa peau. Croquée entière, c'est une collation rassasiante."},
+        {"titre":"Entière, jamais en jus","texte":"Un jus de pomme concentre le sucre et perd les fibres : c'est presque un soda. La pomme entière, elle, arrive avec tout ce qui en freine l'absorption. La différence est énorme."}
+      ],
+      "note": "Manger le fruit entier plutôt que son jus : préférer la lenteur de la nature à la vitesse de l'industrie."
+    },
+    {
+      "id": "carotte", "nom": "Carotte", "tag": "Légume", "resume": "La championne du bêta-carotène — la vitamine A des yeux et de la peau.",
+      "vitamines": ["Vitamine A (bêta-carotène)", "Vitamine K"], "mineraux": ["Potassium"],
+      "reperes": [{"k":"Sucre","v":"faible à modéré"},{"k":"Fibres","v":"bonnes"},{"k":"Charge glycémique","v":"basse (crue)"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"La carotte est très riche en bêta-carotène, que le corps transforme en vitamine A (vision, peau, immunité). Ses fibres et ses antioxydants en font un légume précieux, cru comme cuit."},
+        {"titre":"En pratique","texte":"Le bêta-carotène a besoin d'un peu de matière grasse pour être absorbé : un filet d'huile d'olive sur les carottes râpées, et le corps en profite vraiment. Une cuisson douce libère même davantage de caroténoïdes."}
+      ],
+      "note": "Chaque couleur de l'assiette est une famille de bienfaits. Manger en couleurs, c'est manger complet."
+    },
+    {
+      "id": "chocolat-noir", "nom": "Chocolat noir (70 %+)", "tag": "Plaisir", "resume": "Le plaisir qui soigne — riche en magnésium et en polyphénols.",
+      "vitamines": [], "mineraux": ["Magnésium", "Fer"],
+      "reperes": [{"k":"Sucre","v":"faible si 70 %+"},{"k":"Antioxydant","v":"élevé (flavanols)"},{"k":"Microbiote","v":"nourrit (polyphénols)"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"À 70 % de cacao et plus, le chocolat noir est pauvre en sucre et riche en flavanols, des polyphénols antioxydants qui nourrissent le microbiote. Il apporte aussi du magnésium, apaisant pour les nerfs."},
+        {"titre":"La juste mesure","texte":"Deux ou trois carrés, dégustés lentement, en pleine conscience, valent mieux qu'une tablette avalée distraitement. Le plaisir vrai n'a pas besoin d'excès."}
+      ],
+      "note": "Le plaisir n'est pas l'ennemi de la mesure : rendu à sa juste place, il devient plus vrai, et suffit avec moins."
+    },
+    {
+      "id": "huile-olive", "nom": "Huile d'olive (vierge extra)", "tag": "Matière grasse", "resume": "La bonne graisse par excellence — polyphénols et vitamine E.",
+      "vitamines": ["Vitamine E", "Vitamine K"], "mineraux": [],
+      "reperes": [{"k":"Sucre","v":"nul"},{"k":"Bon gras","v":"mono-insaturé"},{"k":"Inflammation","v":"apaise (polyphénols)"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"L'huile d'olive vierge extra est riche en graisses mono-insaturées et en polyphénols (oléuropéine, hydroxytyrosol) anti-inflammatoires. C'est le cœur de l'alimentation méditerranéenne, associée à la santé du cœur."},
+        {"titre":"En pratique","texte":"« Vierge extra » et première pression à froid pour garder les polyphénols. Crue sur les légumes, ou en cuisson douce. Elle aide aussi à absorber les vitamines liposolubles (A, D, E, K) des autres aliments."}
+      ],
+      "note": "Toutes les graisses ne se valent pas. Choisir la bonne, c'est nourrir sans alourdir."
+    },
+    {
+      "id": "ail", "nom": "Ail", "tag": "Condiment", "resume": "Un prébiotique antimicrobien — petit en quantité, grand en effet.",
+      "vitamines": ["Vitamine C", "Vitamine B6"], "mineraux": ["Manganèse"],
+      "reperes": [{"k":"Sucre","v":"négligeable"},{"k":"Microbiote","v":"prébiotique (inuline)"},{"k":"Inflammation","v":"apaise"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"L'ail contient de l'allicine (libérée quand on l'écrase), aux propriétés antimicrobiennes, et de l'inuline, une fibre prébiotique qui nourrit les bonnes bactéries. Un grand effet pour une petite quantité."},
+        {"titre":"En pratique","texte":"L'allicine est plus active dans l'ail cru ou à peine cuit. Écrasez-le et laissez-le reposer quelques minutes avant de l'ajouter en fin de cuisson."}
+      ],
+      "note": "Les plus petites choses, prises avec régularité, façonnent le terrain plus sûrement que les grands gestes rares."
+    },
+    {
+      "id": "pois-chiches", "nom": "Pois chiches", "tag": "Légumineuse", "resume": "Rassasiants et fibreux — la base du houmous, l'ami du microbiote.",
+      "vitamines": ["Vitamine B9 (folate)", "Vitamine B6"], "mineraux": ["Fer", "Magnésium", "Zinc"],
+      "reperes": [{"k":"Sucre","v":"faible"},{"k":"Fibres","v":"très élevées"},{"k":"Charge glycémique","v":"basse"},{"k":"Microbiote","v":"nourrit beaucoup"},{"k":"Protéines","v":"bonnes"}],
+      "blocs": [
+        {"titre":"Ses bienfaits","texte":"Comme les lentilles, les pois chiches associent protéines végétales, fibres et minéraux, avec une charge glycémique basse. Leurs fibres fermentescibles sont un excellent carburant pour le microbiote."},
+        {"titre":"En pratique","texte":"En houmous, en salade, rôtis au four avec des épices pour une collation croustillante qui remplace les chips. Bien cuits et rincés, ils se digèrent mieux."}
+      ],
+      "note": "Se rassasier de vrai, c'est se libérer du grignotage. La satiété douce est une alliée silencieuse."
+    }
+  ]
+}
